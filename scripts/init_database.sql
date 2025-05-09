@@ -1,3 +1,19 @@
+/***************************************************************************************
+ * Title: CREATE DATABASE AND SCHEMA
+ * Purpose: 
+ * This script checks if the 'DataWarehouse' database exists, drops it if it does, 
+ * and then creates a new 'DataWarehouse' database. It also creates three schemas 
+ * - 'bronze', 'silver', and 'gold' - for different layers in the data warehouse. 
+ * The schemas represent the following:
+ *   - 'bronze': Raw data (Landing zone)
+ *   - 'silver': Cleansed/Transformed data (Staging area)
+ *   - 'gold': Curated/Aggregated data (Analytics/Reporting)
+ * 
+ * Usage:
+ * Run this script to initialize a new 'DataWarehouse' database with the necessary
+ * schemas for your data processing pipeline.
+ ***************************************************************************************/
+
 -- Switch to the 'master' database to perform server-level operations
 USE master;
 GO
